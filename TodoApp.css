@@ -39,10 +39,10 @@ button{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+   
     cursor: pointer;
 }
-.Deletebutton{
+.BDelete{
     background-color: #f44336;
 }
 
@@ -60,7 +60,18 @@ button{
     background-color: #006994;
 }
 
+.Task{
+    display: inline;
+    
+}
 
+#DisplayTask{
+    display: inline;
+}
+
+.btnSide{
+    float: right;
+}
 
 
 
