@@ -1,77 +1,116 @@
-body{
+body {
     background-color: #c9e2ff;
- 
-}
-
-
-form{
+  }
   
+  form {
     border-radius: 21px;
     border: 2px solid black;
-    height: 500px;
+    height: 600px;
     margin-left: 500px;
     margin-right: 500px;
     background-color: #ffe2fd;
-
-}
-
-h1{
+   
+  }
+   
+  h1 {
     text-align: center;
-}
-
-#placeholder{
-
+  }
+  
+  #placeholder { 
     text-align: center;
     font-size: 20px;
     color: #888;
     margin-left: 150px;
     margin-bottom: 20px;
-    
-
-}
-button{
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 9px;
-    color: white;
-    padding: 0px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+  }
    
-    cursor: pointer;
-}
-.BDelete{
+  .BDelete {
     background-color: #f44336;
-}
-
-#add{
-    background-color: #008CBA;
-    margin-left: 150px;
+  }
+   
+  #add {
+    background-color: #1bcf449c;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 23px;
-    margin: 20px 6px;
     cursor: pointer;
-}                           
-#add:hover{
+    border-radius: 10px;
+    font-family: monospace;
+    margin-left: 20px;
+ }
+  
+  
+  #add:hover {
     background-color: #006994;
-}
-
-.Task{
+  }
+  
+  
+  #AddTask {
+     text-align: center;
+     font-size: 17px;
+     color: #888;
+     height: 33px;
+     width: 290px;
+     border-radius: 8px;
+     font-family: sans-serif;
+  }
+  
+  
+  .Task {
     display: inline;
-    
-}
-
-#DisplayTask{
+ }
+  
+#DisplayTask {
     display: inline;
-}
-
-.btnSide{
+    height: 100%;
+    border: 2px solid rgb(19, 102, 19);
+    background-color: #006994;
+    width: 100px;
+    overflow: scroll;
+  }
+   
+.btnSide {
     float: right;
+  }
+  
+  
+  .Divshadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 25px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: block;
 }
-
-
-
+  
+  
+  #Addinput {
+     display: flex;
+     justify-content: center;
+     width: 376px;
+     margin-top: 25px;
+     margin: auto;
+     align-items: center;
+     margin-top: 35px;
+  }
+  
+  
+  .Deleteb {
+    color: #f44336;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  
+  .Editb {
+    color: #1e89e8;
+    font-size: 50px;
+    cursor: pointer;
+    margin-right: 25px;
+    border: none;
+    
+  }
+  
+  

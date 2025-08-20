@@ -1,69 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <link rel="stylesheet" href="TodoApp.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo-App</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 
 <body>
     <h1>ToDo List</h1>
     <form>
-        <input type="text" id="AddTask" placeholder="Add a new task">
-        <button type="button" id="add" onclick="Add()">Add</button>
-        <br>
+        <div id="Addinput">
+            <input type="text" id="AddTask" placeholder="Add a new task">
+            <button type="button" id="add" onclick="Add()">Add</button>
+        </div>
+
+
 
         <div id="DisplayTask">
-            <label style="display: inline;">
-                <!-- <input type="checkbox" style="vertical-align: middle;">Wake-up</label>
-            <button type="button"class="BEdit">Edit</button>
-             <button type="button" class="BDelete">Delete</button><br>
-                
 
 
-            <label><input type="checkbox">Fresh-up</label>
-            <button type="button"class="BEdit">Edit</button>
-            <button type="button" class="BDelete">Delete</button><br>
-
-            <label><input type="checkbox">Breakfast</label>
-            <button type="button" class="BEdit">Edit</button>
-            <button type="button"class="BDelete">Delete</button><br>
-
-            <label><input type="checkbox">Go to College</label>
-            <button type="button"class="BEdit">Edit</button>
-            <button type="button" class="BDelete">Delete</button><br>
+            <div class="Divshadow">
+                <label>
+                    <input type="checkbox" id="onetask">Wake-up</label>
+                <div style="float: right;">
 
 
-            <label><input type="checkbox">Lunch</label>
-            <button type="button" class="BEdit">Edit</button>
-            <button type="button" class="BDelete">Delete</button><br>
-
-            <label><input type="checkbox">Study in Argus</label>
-            <button type="button" class="BEdit">Edit</button>
-            <button type="button" class="BDelete">Delete</button><br>
-
-            <label><input type="checkbox">Go back to Badri</label>
-            <button type="button" class="BEdit">Edit</button>
-            <button type="button" class="Deletebutton">Delete</button><br>
-
-            <label><input type="checkbox">Dinner</label>
-            <button type="button" class="BEdit">Edit</button>
-            <button type="button" class="BDelete">Delete</button><br>
-
-            <label><input type="checkbox">Home Work</abel>
-                <button type="button" class="BEdit" >Edit</button>
-                <button type="button"class="BDelete">Delete</button><br>
-
-                <label><input type="checkbox">Sleep</label>
-                <button type="button"class="BEdit">Edit</button>
-                <button type="button"  class="BDelete">Delete</button><br> -->
+                    <i class="fa fa-edit Editb" style="font-size: 30px;"></i>
+                   
+                    <i class="material-icons Deleteb">delete</i>
+                    
+                </div>
+            </div>
+        </div>
+   </form>
 
 
-    </form>
-<span>hi</span><div>Hello</div>
-<script src="ToDoApp.js"></script>
+    <script src="ToDoApp.js"></script>
 </body>
+
 
 </html>
