@@ -9,37 +9,46 @@
     <title>ToDo-App</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 
 <body>
-    <h1>ToDo List</h1>
+
+
     <form>
+
+
+
+        <div id="Header">
+            <h1>🔆 ToDo List</h1>
+        </div>
+
+
         <div id="Addinput">
-            <input type="text" id="AddTask" placeholder="Add a new task">
+            <input type="text" id="AddTask" placeholder="Your New Task Add " required>
             <button type="button" id="add" onclick="Add()">Add</button>
         </div>
 
 
-
         <div id="DisplayTask">
-
 
             <div class="Divshadow">
                 <label>
                     <input type="checkbox" id="onetask">Wake-up</label>
                 <div style="float: right;">
 
-
-                    <i class="fa fa-edit Editb" style="font-size: 30px;"></i>
-                   
+                    <i class="fa fa-edit Editb" style="font-size: 25px;"></i>
+                    <!-- <button type="button" class="BEdit">Edit</button> -->
                     <i class="material-icons Deleteb">delete</i>
-                    
+                    <!-- <button type="button" class="BDelete">Delete</button> -->
                 </div>
             </div>
-        </div>
-   </form>
 
+        </div>
+
+    </form>
 
     <script src="ToDoApp.js"></script>
 </body>
