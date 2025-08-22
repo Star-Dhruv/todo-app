@@ -12,6 +12,7 @@ form {
    margin-left: 500px;
    margin-right: 500px; 
    background-color: #ffe2fd;
+   overflow-y: scroll;
 
 
 }
@@ -76,7 +77,6 @@ h1 {
 #DisplayTask {
     display: inline;
     height: 100%;
-    border: 2px solid rgb(19, 102, 19);
     background-color: #006994;
  
    
