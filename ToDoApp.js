@@ -9,10 +9,11 @@ function Add() {
 
  // Add Task
 var Ptag = document.createElement("p");
-var text = document.getElementById("AddTask").value;
+// I use trim() function for not i want white space
+var text = document.getElementById("AddTask").value.trim();
 Ptag.textContent = text;
 Ptag.classList.add('Task');
-console.log(Ptag);
+
 Ptag.setAttribute("type", "checkbox");
 
 
@@ -59,7 +60,15 @@ div.appendChild(Ptag);
 BDiv.appendChild(BEdit);
 BDiv.appendChild(BDelete);
 div.appendChild(BDiv);
-element.appendChild(div);
+if(text != "")
+{
+  element.appendChild(div);
+  console.log(text);
+}
+else{
+   console.log("Please fill the task");
+}
+
 
 
 // // remove text from input tag after that send
