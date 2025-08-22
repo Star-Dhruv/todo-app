@@ -42,15 +42,15 @@ h1 {
 
 
 #add {
-   background-color: #1bcf449c;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 23px;
-   cursor: pointer;
-   border-radius: 10px;
-   font-family: monospace;
-   margin-left: 20px;
+    background-color: #1bcf449c;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 43px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: monospace;
+    margin-left: 20px;
 
 }
 
@@ -101,9 +101,9 @@ h1 {
    justify-content: center;
    width: 376px;
    margin-top: 25px;
-   margin: auto;
    align-items: center;
    margin-top: 35px;
+   justify-content: flex-end;
 }
 
 .Deleteb {
@@ -130,10 +130,15 @@ h1 {
     color: white;
     height: 113px;
     display: flex;
-    align-items: center;
-    justify-content: center;
 
+ 
 }
+#head{
+     font-size: 43px;
+    margin-left: 64px;
+    margin-top: 35px;
+}
+
 
 @media only screen and (max-width: 370px) {
  form {
