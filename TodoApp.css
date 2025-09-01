@@ -71,6 +71,8 @@ h1 {
 
 .Task {
    display: inline;
+   font-size: 25px;
+   margin-left: 20px;
 
 }
 
@@ -110,6 +112,7 @@ h1 {
    font-size: 25px;
    cursor: pointer;
    border: none;
+   background-color: transparent; 
 }
 
 .Editb {
@@ -118,7 +121,7 @@ h1 {
    cursor: pointer;
    margin-right: 25px;
    border: none;
-
+   background-color: transparent; 
 }
 
 #Header {

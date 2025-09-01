@@ -50,8 +50,7 @@ div.appendChild(BDiv);
 if(text != "")
 {
   element.appendChild(div);
-  console.log(document.getElementById("AddTask"));
-  console.log("Hello pankaj")
+  
 }
 else{
     alert("Please fill the task");
