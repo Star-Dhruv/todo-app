@@ -61,7 +61,7 @@ else{
 
 
 // // remove text from input tag after that send
-document.getElementById("AddTask").value = " ";
+document.getElementById("AddTask").value = "";
 
 
 // // Delete the data when you press delete
