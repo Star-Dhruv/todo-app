@@ -8,9 +8,9 @@ body {
 form {
    border-radius: 6px;
    border: 2px solid black;
-   height: 600px;
-   margin-left: 500px;
-   margin-right: 500px; 
+   height: 450px;
+   margin-left: 200px;
+   margin-right: 200px; 
    background-color: #ffe2fd;
    overflow-y: scroll;
 
@@ -66,6 +66,7 @@ h1 {
    width: 290px;
    border-radius: 8px;
    font-family: sans-serif;
+   /* margin-left: 640px; */
 }
 
 .Task {
@@ -98,12 +99,10 @@ h1 {
 
 #Addinput {
    display: flex;
-   justify-content: center;
-   width: 376px;
-   margin-top: 25px;
-   align-items: center;
-   margin-top: 35px;
-   justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+    display: flex; 
+    justify-content: flex-end;
 }
 
 .Deleteb {
@@ -130,7 +129,8 @@ h1 {
     color: white;
     height: 113px;
     display: flex;
-
+    justify-content: space-between;
+   border-radius: 8px;
  
 }
 #head{
@@ -152,10 +152,10 @@ h1 {
    display: flex;
    justify-content: center;
    width: 300px;
-   margin-top: 25px;
    margin: auto;
    align-items: center;
    margin-top: 35px;
+   
 }
 
 }

@@ -1,13 +1,6 @@
 function Add() {
-
-
-
-
-
-
-
-
- // Add Task
+   // Add Task
+ 
 var Ptag = document.createElement("p");
 // I use trim() function for not i want white space
 var text = document.getElementById("AddTask").value.trim();
@@ -26,12 +19,6 @@ var div = document.createElement("div");
 // Add Div another div for button float left
 var BDiv = document.createElement("div");
 BDiv.classList.add('btnSide');
-
-
-
-
-
-
 
 
 // Add edit button
@@ -63,10 +50,12 @@ div.appendChild(BDiv);
 if(text != "")
 {
   element.appendChild(div);
-  console.log(text);
+ 
+    document.getElementById("AddTask").value = "add your new Task";
 }
 else{
-   console.log("Please fill the task");
+    alert("Please fill the task");
+
 }
 
 
