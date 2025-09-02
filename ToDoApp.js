@@ -1,3 +1,5 @@
+const timeObject = [];
+const dataObject = [];
 function Add() {
    // Add Task
  
@@ -9,6 +11,14 @@ Ptag.classList.add('Task');
 
 Ptag.setAttribute("type", "checkbox");
 
+// Add time
+
+var time = document.createElement("p");
+var timeNumber = document.getElementById("time").value.trim();
+time.textContent = timeNumber;
+time.classList.add('Task');
+ timeObject.push(timeNumber);
+console.log(timeObject);
 
 // Add check button
 var input = document.createElement("input");
@@ -44,9 +54,29 @@ BEdit.classList.add('fa-edit');
 const element = document.getElementById("DisplayTask");
 div.appendChild(input);
 div.appendChild(Ptag);
+div.appendChild(time);
 BDiv.appendChild(BEdit);
 BDiv.appendChild(BDelete);
 div.appendChild(BDiv);
+
+// data store in array for time to set data
+dataObject.push(div);
+
+// time ko check karne keliye hai
+
+// var length = dataObject.length;
+// console.log(length);
+//  timeObject.forEach(number => {
+//   var tmp;
+//     var increase = number +1;
+//     if(number < increase){
+//        tmp =timeObject.number;
+//       timeObject.number = timeObject.increase;
+//       timeObject.increase =tmp;
+//        //console.log("The time is big");
+//     }
+     
+//  });
 if(text != "")
 {
   element.appendChild(div);
@@ -78,12 +108,22 @@ function Dele() {
   
 }
 
-// The function is used for delete the task
+// The function is used for Edit the task and time
 function edit() {
  
-  var editText = prompt("Edit the task");
-  Ptag.textContent  = editText;
  
+  var input = prompt("Enter task and time:");
+
+// Split the input into task and time
+var parts = input.split(",");
+
+var editText = parts[0]?.trim();
+var resetTime = parts[1]?.trim();
+
+
+
+  Ptag.textContent  = editText;
+  time.textContent = resetTime;
 }
 
 }
