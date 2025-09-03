@@ -9,6 +9,7 @@ var text = document.getElementById("AddTask").value.trim();
 Ptag.textContent = text;
 Ptag.classList.add('Task');
 
+
 Ptag.setAttribute("type", "checkbox");
 
 // Add time
@@ -22,10 +23,10 @@ console.log(timeObject);
 
 // Add check button
 var input = document.createElement("input");
-  input.setAttribute("type", "checkbox");
- // Add Div
+ input.setAttribute("type", "checkbox");
+// Add Div
 var div = document.createElement("div");
- div.classList.add('Divshadow');
+div.classList.add('Divshadow');
 // Add Div another div for button float left
 var BDiv = document.createElement("div");
 BDiv.classList.add('btnSide');
@@ -46,11 +47,19 @@ BEdit.classList.add('fa-edit');
 
 
 
- // Add Delete button
- var BDelete = document.createElement("button");
- BDelete.textContent = "delete";
- BDelete.classList.add('Deleteb');
- BDelete.classList.add('material-icons');
+
+
+
+
+
+
+
+
+// Add Delete button
+var BDelete = document.createElement("button");
+BDelete.textContent = "delete";
+BDelete.classList.add('Deleteb');
+BDelete.classList.add('material-icons');
 const element = document.getElementById("DisplayTask");
 div.appendChild(input);
 div.appendChild(Ptag);
@@ -89,12 +98,19 @@ else{
 
 
 
+
+
+
 // // remove text from input tag after that send
 document.getElementById("AddTask").value = "";
 
 
+
+
 // // Delete the data when you press delete
 BDelete.addEventListener('click', Dele);
+
+
 
 
 BEdit.addEventListener('click', edit);
@@ -102,11 +118,14 @@ BEdit.addEventListener('click', edit);
 
 
 
+
+
+
+
 // The function is used for delete the task
 function Dele() {
-  div.remove();
-  
-}
+ div.remove();
+ }
 
 // The function is used for Edit the task and time
 function edit() {

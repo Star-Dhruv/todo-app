@@ -1,21 +1,60 @@
 body {
-   background-color: #12b4e5;
+   background-image: url(footer.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   z-index: 30;
 }
 
 
+#text{
+ 
+   font-size: 25px;
+   
 
+}
 
 form {
    border-radius: 6px;
    border: 2px solid black;
    height: 450px;
-   margin-left: 200px;
-   margin-right: 200px; 
-   background-color: #0831446e;
+   /* margin-left: 500px; */
+   background-color: #fadede;
    overflow-y: scroll;
+   width: 760px;
+   display: inline-block;
+   background: #020024;
+   background: linear-gradient(to bottom, #1518cdfc 0%, #6f6abb29 100%);
+
+}
+
+#taskhead{
+   text-align: center;
+   font-size: 30px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   color: white;
+   position: sticky;
+   top: 0;
+   background-color: #1518cdfc;
+   padding: 10px;
+   border-bottom: 2px solid black;  
+   font-family: 'Times New Roman', Times, serif;
 
 
 }
+
+#photo {
+   display: inline-block;
+   margin-bottom: 100px;
+   height: 320px;
+
+
+
+
+
+
+}
+
 
 
 h1 {
@@ -42,20 +81,19 @@ h1 {
 
 
 #add {
-    background-color: #1bcf449c;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 33px;
-    cursor: pointer;
-    border-radius: 10px;
-    font-family: monospace;
-    margin-left: 20px;
-
+   background-color: #02e010;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 33px;
+   cursor: pointer;
+   border-radius: 10px;
+   font-family: unset;
+   margin-left: 20px;
 }
 
 #add:hover {
-   background-color: #006994;
+   background-color: #05a3e2;
 }
 
 #AddTask {
@@ -78,13 +116,13 @@ h1 {
 
 
 #DisplayTask {
-    display: inline;
-    height: 100%;
-    background-color: #006994;
- 
-   
-  } 
-   
+   display: inline;
+   height: 100%;
+   background-color: #006994;
+
+
+}
+
 .btnSide {
    float: right;
 }
@@ -93,7 +131,7 @@ h1 {
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
    padding: 20px;
    margin: 25px;
-   background-color: #fff;
+   background-color: #ffffff;
    border-radius: 5px;
    display: block;
 
@@ -101,10 +139,10 @@ h1 {
 
 #Addinput {
    display: flex;
-    align-items: center;
-    margin-right: 20px;
-    display: flex; 
-    justify-content: flex-end;
+   align-items: center;
+   margin-right: 20px;
+   display: flex;
+   justify-content: flex-end;
 }
 
 .Deleteb {
@@ -112,7 +150,7 @@ h1 {
    font-size: 25px;
    cursor: pointer !important;
    border: none;
-   background-color: transparent; 
+   background-color: transparent;
 }
 
 .Editb {
@@ -121,27 +159,29 @@ h1 {
    cursor: pointer !important;
    margin-right: 25px;
    border: none;
-   background-color: transparent; 
+   background-color: transparent;
 }
 
 #Header {
-    background-color: #383cffd1;
-    font-size: 20px;
-    margin-bottom: 48px;
-    box-shadow: 0 15px 17px rgba(0, 0, 0, 0.2);
-    color: white;
-    height: 113px;
-    display: flex;
-    justify-content: space-between;
+   background-color: #00037a;
+   font-size: 20px;
+   margin-bottom: 48px;
+   box-shadow: 0 15px 17px rgba(0, 0, 0, 0.2);
+   color: white;
+   height: 113px;
+   display: flex;
+   justify-content: space-between;
    border-radius: 8px;
- 
+
 }
-#head{
-     font-size: 43px;
-    margin-left: 64px;
-    margin-top: 35px;
+
+#head {
+   font-size: 43px;
+   margin-left: 64px;
+   margin-top: 35px;
 }
-#time{
+
+#time {
    text-align: center;
    font-size: 17px;
    color: #888;
@@ -152,12 +192,13 @@ h1 {
    margin-left: 10px;
 }
 
+
 @media only screen and (max-width: 370px) {
  form {
    border-radius: 6px;
    border: 2px solid black;
-   /* height: 600px; */
-   background-color: #ffe2fd;
+   /* height: 600px; 
+   background-color: #ffe2fd;*/
 }
 
 #Addinput {
@@ -170,17 +211,17 @@ h1 {
    
 }
 
-}
+} 
 
-@media only screen and (max-width: 1237px) {
+ @media only screen and (max-width: 1237px) {
  form {
    border-radius: 6px;
    border: 2px solid black;
-   /* height: 600px; */
+    height: 600px; 
    margin-left: 0%;
    margin-right: 0%;
    background-color: #ffe2fd;
-}
+ } 
 
 #Addinput {
    display: flex;
@@ -190,7 +231,5 @@ h1 {
    margin: auto;
    align-items: center;
    margin-top: 35px;
+} 
 }
-
-}
-
